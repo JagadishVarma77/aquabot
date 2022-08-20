@@ -8,6 +8,8 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - pH_issues
+  - white_gut
 
 responses:
   utter_greet:
@@ -29,6 +31,14 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  utter_pHsolution:
+  - text: "If pH is less than ideal , please apply lime, and if its high please prepare pH juice or apply sugar ,ideal range is 7.5-8.5"
+
+  utter_whitegut_solution:
+  - text: "If you find white_gut then start giving Organic acids in feed and gut probiotics after 2-3 days"
+
+  utter_want_whitegut_reasons:
+  - text: "Do you want to know  about reasons of white gut? [yes|no]"
+
+  utter_whitegut_reasons:
+  - text: "White gut can be affected  for various reasons like vibrio, sludge formation in pond bottom, pH stability"

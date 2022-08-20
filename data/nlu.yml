@@ -89,3 +89,12 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+- intent: pH_issues
+  examples: |
+    - ph is high
+    - ph is low
+- intent: white_gut
+  examples: |
+    - white_gut
+    - solution for white_gut
+    -what should i do for white_gut?

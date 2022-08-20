@@ -28,3 +28,46 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: ph_query
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: pH_issues
+  - action: utter_pHsolution
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - action: utter_goodbye
+
+- story: ph_query2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: pH_issues
+  - action: utter_pHsolution
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: whitegut_query
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: white_gut
+  - action: utter_whitegut_solution
+  - action: utter_want_whitegut_reasons
+  - intent: affirm
+  - action: utter_whitegut_reasons
+  - intent: affirm
+  - action: utter_happy
+  
+- story: whitegut_query2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: white_gut
+  - action: utter_whitegut_solution
+  - action: utter_want_whitegut_reasons
+  - intent: deny
+  - action: utter_goodbye
